@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+       
 
         <style>
             @media(max-width:414px){
@@ -60,7 +61,7 @@
             }
             .email2{
                 position:absolute;
-                bottom:0%;
+                bottom:20%;
                 font-size: 20px;
             }
             .partb{
@@ -90,8 +91,21 @@
             }
             .pass2{
                 position:absolute;
-                bottom:0%;
+                bottom:20%;
                 font-size: 20px;
+                
+               
+            }
+            .check{
+                position:absolute;
+                top:45%;
+                left:10%;
+                width:30%;
+                background-color:#4A6572;
+                border: 2px solid black;
+                border-radius:3px;
+                color: #f9aa33;
+
             }
             .nextp{
                 position:absolute;
@@ -100,7 +114,6 @@
                 
 
             }
-            
             .nextp .fas{
                 color:#f9aa33;
             }
@@ -123,7 +136,6 @@
         }
         </style>
         <title>LOG IN</title>
-        <!-- Script that let me use icon for the page -->
         <script src="https://kit.fontawesome.com/7b0b641d05.js" crossorigin="anonymous"></script>
         <meta charset="8utf">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -131,7 +143,7 @@
     <body>
         <div class = "header">
             <div class ='login'><c>LOG IN</c></div>
-            <a href="https://willamjonathan.github.io/RW_FIT/"style="color:black;text-decoration:none;">
+            <a href="https://willamjonathan.github.io/FP_1/"style="color:black;text-decoration:none;">
                 <i class="fas fa-caret-left fa-2x"></i> 
             </a>
             
@@ -141,7 +153,7 @@
             <p>Please input your email:</p>
             </div>
             <div class ="box1">
-            <div class ='email2'>williamjonathan@gmail.com</div>
+            <div class ='email2'><input id = 'email2' type="email2"></div>
             </div>
         </div>
         <div class ='partb'>
@@ -149,20 +161,21 @@
             <p>Please input your password:</p>
             </div>
             <div class ="box2">
-            <div class ='pass2'>***********</div>
+            <div class ='pass2'><input id = 'pass2' type="pass2"></div>
             </div>
         </div>
-        <!-- When the arrow is clicked, there will be a pop up saying log in succesfully and the page will be redirected to the next page -->
-        <button onclick="alert('log in successfully')"><div class ="nextp">
-            <b><a href = "https://willamjonathan.github.io/FP_3/"style="color:black;text-decoration:none;"><i class="fas fa-caret-right fa-2x"></i></a></b>
+        <button onclick=myfunct()><div class ="check">
+            click here first
         </div></button>
+        <div class ="nextp">
+            <b><a href = "https://willamjonathan.github.io/FP_3/"style="color:black;text-decoration:none;"><i class="fas fa-caret-right fa-2x"></i></a></b>
+        </div>
         <div class ="footer">
 
             
             <div class ="moto"><b>YOUR HEALTHY SOLUTION</b></div>
         </div>
-        
-
+        <script src="thejs.js"></script>
     </body>
 
 </html>
