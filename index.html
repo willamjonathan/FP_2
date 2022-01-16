@@ -9,6 +9,7 @@
                 background-color:white;
             
             }
+                /* header or upper part of the page */
             .header{
                 position: absolute;
                 top:0%;
@@ -18,13 +19,14 @@
                 background-color:#4A6572 ;
                 border-bottom: 3px solid black;
             }
+                /* the backward arrow */
             .header .fas{
                 position: relative;
                 left:5%;
                 bottom:5%;
                 color:#f9aa33;
             }
-
+        /* the title of the page */
             .login{
                 font-family: 'Times New Roman', Times, serif;
                 font-weight: bold;
@@ -34,6 +36,7 @@
                 top:30%;
                 color:#f9aa33;
             }
+                
             .parta{
                 position:absolute;
                 top:15%;
@@ -42,6 +45,7 @@
                 width: 100%;
             
             }
+                /* input your email text */
             .email{
                 width:60%;
                 position: absolute;
@@ -50,6 +54,7 @@
                 font-weight: bold;
                 color:black;
             }
+                /* input your email box */
             .box1{
                 position:fixed;
                 top:20%;
@@ -60,11 +65,13 @@
                 border: 2px solid black;
                 
             }
+                
             .email2{
                 position:absolute;
                 bottom:20%;
                 font-size: 20px;
             }
+                
             .partb{
                 position:absolute;
                 top:30%;
@@ -73,6 +80,7 @@
                 width: 100%;
             
             }
+                /* input your pass text */
             .pass{
                 width:70%;
                 position: absolute;
@@ -80,6 +88,7 @@
                 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                 font-weight: bold;
             }
+                /* input your pass box */
             .box2{
                 position:fixed;
                 top:33%;
@@ -97,6 +106,7 @@
                 
                
             }
+                /* click here first styling to check the password and emaiil*/
             .check{
                 position:absolute;
                 top:45%;
@@ -108,6 +118,7 @@
                 color: #f9aa33;
 
             }
+                /* additional features for the prototype to know the right email and pass */
             .info{
                 position:absolute;
                 top:50%;
@@ -121,7 +132,7 @@
 
 
             }
-
+            /* forward arrow which redirect you to the next page */
             .nextp{
                 position:absolute;
                 top:50%;
@@ -132,6 +143,7 @@
             .nextp .fas{
                 color:#f9aa33;
             }
+                /* footer or lower part of the page */
             .footer{
                 position:absolute;
                 bottom:0%;
@@ -150,44 +162,46 @@
             }
         }
         </style>
-        <title>LOG IN</title>
+        <title>LOG IN</title><!--- the title of the webpage --->
         <script src="https://kit.fontawesome.com/7b0b641d05.js" crossorigin="anonymous"></script>
         <meta charset="8utf">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div class = "header">
-            <div class ='login'><c>LOG IN</c></div>
+            <div class ='login'><c>LOG IN</c></div> <!--- the title of the page --->
+            <!--- the backward arrow --->
             <a href="https://willamjonathan.github.io/RW_FIT/"style="color:black;text-decoration:none;">
                 <i class="fas fa-caret-left fa-2x"></i> 
             </a>
             
         </div>
+        <!--- content of the page --->
         <div class ='parta'>
-            <div class ='email'>
-            <p>Please input your email:</p>
+            <div class ='email'> <!--- ask for your email --->
+            <p>Please input your email:</p> 
             </div>
             <div class ="box1">
-            <div class ='email2'><input id = 'email2' type="email2"></div>
+            <div class ='email2'><input id = 'email2' type="email2"></div> <!--- input type box, you can write by keyboard --->
             </div>
         </div>
         <div class ='partb'>
-            <div class ='pass'>
+            <div class ='pass'><!--- ask for your password --->
             <p>Please input your password:</p>
             </div>
             <div class ="box2">
             <div class ='pass2'><input id = 'pass2' type="pass2"></div>
             </div>
         </div>
-        <button onclick=myfunct()><div class ="check">
+        <button onclick=myfunct()><div class ="check"> <!--- to check your pass and email --->
             click here first
         </div></button>
 
 
-        <button onclick="alert('email : williamjonathan@gmail.com and password : password')"><div classid = "infos" class ="info"> Click for information
+        <button onclick="alert('email : williamjonathan@gmail.com and password : password')"><div classid = "infos" class ="info"> Click for information<!---to know the right pass and email --->
 
         </div></button>
-        <div class ="nextp">
+        <div class ="nextp"><!--- forward arrow that redirects you to the next page --->
             <b><a href = "https://willamjonathan.github.io/FP_3/"style="color:black;text-decoration:none;"><i class="fas fa-caret-right fa-2x"></i></a></b>
         </div>
         <div class ="footer">
@@ -195,6 +209,7 @@
             
             <div class ="moto"><b>YOUR HEALTHY SOLUTION</b></div>
         </div>
+        <!--- connect to java script ---> 
         <script type="text/javascript" src="thejs.js"></script>
     </body>
 
